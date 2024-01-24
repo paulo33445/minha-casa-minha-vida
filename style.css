@@ -1,0 +1,95 @@
+/* Estilos para os ícones Font Awesome */
+.custom-box .elementor-icon-box-icon i {
+    font-size: 40px;
+    color: #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Estilos para os links dentro dos ícones */
+.custom-box .elementor-icon-box-icon a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+/* Estilos para as caixas personalizadas */
+.custom-box {
+    margin-top: 50px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.custom-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.custom-box .elementor-icon-box-wrapper {
+    border: 2px solid #3498db;
+    padding: 70px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.custom-box .elementor-icon-box-content {
+    text-align: center;
+    color: #777;
+    margin-top: 15px;
+}
+
+/* Estilos para o link dentro das caixas personalizadas */
+.custom-box .elementor-icon-box-title a {
+    color: #333;
+    text-decoration: none;
+    margin-top: 15px;
+    display: block;
+}
+
+/* Estilos para o carrossel */
+.carousel-container {
+    max-height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-caption button {
+    white-space: nowrap; /* Impede a quebra de linha */
+}
+
+@media (max-width: 768px) {
+    /* Estilos para tornar o carrossel responsivo */
+    .carousel-inner {
+        max-height: 300px; /* Altura máxima para telas menores */
+    }
+
+    .carousel-item {
+        height: 300px; /* Altura fixa para cada item do carrossel */
+    }
+
+    .carousel-item img {
+        object-fit: contain;
+        width: 100%; /* Garante que a imagem se ajuste dentro do item do carrossel */
+        height: 100%; /* Mantém a proporção da imagem */
+    }
+
+    /* Estilos para o botão do carrossel em telas menores */
+    .carousel-caption button {
+        white-space: nowrap; /* Impede a quebra de linha */
+        display: inline-block;
+        width: auto;
+        margin-top: 10px; /* Ajuste a margem conforme necessário */
+    }
+}

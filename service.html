@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CollaboraPro - Desenvolvimento de Software</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="service.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand me-5" href="#">
+                <img src="img/Logo sem fundo.png" alt="Logo" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="client.html">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Time</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+                <a href="contact.html" class="btn btn-outline-primary">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-center">
+        <h1><i class="fas fa-code"></i> CollaboraPro</h1>
+        <p>Sua parceira em desenvolvimento de software</p>
+    </header>
+
+    <section class="container about">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Sobre Nós</h2>
+                <p>
+                    A CollaboraPro é uma empresa inovadora e ágil, especializada no desenvolvimento de software de
+                    alta qualidade. Com uma equipe talentosa e experiente, estamos comprometidos em fornecer soluções
+                    personalizadas que impulsionam o sucesso de nossos clientes.
+                </p>
+                <p>
+                    Nosso foco é transformar ideias em realidade, oferecendo serviços abrangentes que abrangem desde o
+                    desenvolvimento web até consultoria em TI. Estamos aqui para atender às suas necessidades de
+                    tecnologia da informação e ajudar a impulsionar o crescimento do seu negócio.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="about-image.jpg" alt="Sobre Nós" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <section class="container services">
+        <h2 class="text-center mb-5">Nossos Serviços</h2>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card service-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-laptop-code service-icon"></i>
+                        <h5 class="card-title">Desenvolvimento Web</h5>
+                        <p class="card-text">Criação de websites modernos e responsivos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card service-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-mobile-alt service-icon"></i>
+                        <h5 class="card-title">Aplicações Móveis</h5>
+                        <p class="card-text">Desenvolvimento de aplicativos móveis para iOS e Android.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card service-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-cogs service-icon"></i>
+                        <h5 class="card-title">Consultoria em TI</h5>
+                        <p class="card-text">Orientações especializadas para suas necessidades de tecnologia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container portfolio">
+        <h2 class="text-center mb-5">Portfólio</h2>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="portfolio-item">
+                    <img src="portfolio-item1.jpg" alt="Projeto 1" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="portfolio-item">
+                    <img src="portfolio-item2.jpg" alt="Projeto 2" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="portfolio-item">
+                    <img src="portfolio-item3.jpg" alt="Projeto 3" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials text-center">
+        <h2 class="text-black mb-5">O que nossos clientes dizem</h2>
+
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"A CollaboraPro superou todas as nossas expectativas. Seu trabalho é incrível e sua equipe é altamente profissional."</p>
+                        <p class="testimonial-author">- Cliente Satisfeito</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Estamos muito felizes com os resultados. A CollaboraPro é, sem dúvida, a melhor escolha para desenvolvimento de software."</p>
+                        <p class="testimonial-author">- Cliente Feliz</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Trabalhar com a CollaboraPro foi uma experiência excepcional. Recomendamos seus serviços a todos os nossos parceiros."</p>
+                        <p class="testimonial-author">- Parceiro de Negócios</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+
+    </section>
+
+    <!-- Links -->
+    <section class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4"><i class="fas fa-code"></i> Sua Empresa</h6>
+                <p>Desenvolvendo soluções de software personalizadas para impulsionar seu negócio.</p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">Produtos</h6>
+                <p><a href="#!" class="text-reset">Desenvolvimento Personalizado</a></p>
+                <p><a href="#!" class="text-reset">Equipe Especializada</a></p>
+                <p><a href="#!" class="text-reset">Soluções Inovadoras</a></p>
+                <!-- Adicione mais produtos conforme necessário -->
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">Links Úteis</h6>
+                <p><a href="#!" class="text-reset">Blog</a></p>
+                <p><a href="#!" class="text-reset">Contato</a></p>
+                <p><a href="#!" class="text-reset">Clientes</a></p>
+                <p><a href="#!" class="text-reset">Sobre</a></p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
+                <p><i class="fas fa-home me-3"></i> Sua Rua, Sua Cidade, Seu Estado</p>
+                <p><i class="fas fa-envelope me-3"></i> info@suaempresa.com</p>
+                <p><i class="fas fa-phone me-3"></i> +55 123 456 789</p>
+            </div>
+        </div>
+    </section>
+    <!-- Links -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright: <a class="text-reset fw-bold" href="">CollaboraPro</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

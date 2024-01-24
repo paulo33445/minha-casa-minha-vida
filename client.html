@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollaboraPro - Desenvolvimento de Software</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="client.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand me-5" href="#">
+                <img src="img/Logo sem fundo.png" alt="Logo" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="client.html">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Time</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                </ul>
+                <a href="contact.html" class="btn btn-outline-primary">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-5">
+        <h1>CollaboraPro</h1>
+        <p>Sua Solução Digital</p>
+    </header>
+
+        <!-- Adicione estas classes ao seu HTML -->
+<div class="container mt-5">
+    <h2>Nossos Clientes</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Cliente 1 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/banner2.jpg" class="card-img-top" alt="Logo Cliente 1">
+                <div class="card-body">
+                    <h5 class="card-title">Empresa Tech Innovations</h5>
+                    <p class="card-text">Desenvolvimento de soluções inovadoras para impulsionar o crescimento.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#clientModal1">Detalhes</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cliente 2 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="caminho/para/imagem-cliente2.jpg" class="card-img-top" alt="Logo Cliente 2">
+                <div class="card-body">
+                    <h5 class="card-title">Consultoria Global</h5>
+                    <p class="card-text">Parceria estratégica para desenvolvimento personalizado e eficiente.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#clientModal2">Detalhes</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cliente 3 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="caminho/para/imagem-cliente3.jpg" class="card-img-top" alt="Logo Cliente 3">
+                <div class="card-body">
+                    <h5 class="card-title">Soluções WebCorp</h5>
+                    <p class="card-text">Transformando ideias em realidade digital.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#clientModal3">Detalhes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        <!-- Modal Cliente 1 -->
+    <div class="modal fade" id="clientModal1" tabindex="-1" aria-labelledby="clientModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="clientModal1Label">Empresa Tech Innovations</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/banner.png" alt="Logo Cliente 1" class="mb-3 client-logo">
+                    <h2>Projetos Atuais</h2>
+                    <ul>
+                        <li>Projeto Bolacha - Desenvolvimento Web</li>
+                        <li>Projeto Inovação - Aplicativo Móvel</li>
+                        <li>Projeto Eficiência - Integração de Sistemas</li>
+                    </ul>
+
+                    <div class="col-md-4">
+                        <div class="card" data-bs-toggle="modal" data-bs-target="#projetoDestaqueModal">
+                            <img src="img/banner.png" class="card-img-top" alt="Projeto Destaque">
+                            <div class="card-body">
+                                <h5 class="card-title">Projeto Destaque</h5>
+                                <p class="card-text">Solução inovadora para gerenciamento de projetos. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <h2>Depoimento</h2>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">"Estamos extremamente satisfeitos com os serviços da CollaboraPro. Eles superam nossas expectativas a cada projeto."</p>
+                    </blockquote>
+
+                    <h2>Desempenho dos Projetos</h2>
+                    <canvas id="projetoDesempenho1" width="400" height="200"></canvas>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Entre em Contato</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Cliente 2 -->
+    <div class="modal fade" id="clientModal2" tabindex="-1" aria-labelledby="clientModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="clientModal2Label">Consultoria Global</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="caminho/para/logo_cliente2.png" alt="Logo Cliente 2" class="mb-3 client-logo">
+                    <h2>Projetos Atuais</h2>
+                    <ul>
+                        <li>Projeto Estratégia - Consultoria Empresarial</li>
+                        <li>Projeto Inovação - Desenvolvimento de Estratégias</li>
+                        <li>Projeto Eficiência - Otimização de Processos</li>
+                    </ul>
+
+                    <div class="col-md-4">
+                        <div class="card" data-bs-toggle="modal" data-bs-target="#projetoDestaqueModal">
+                            <img src="img/banner.png" class="card-img-top" alt="Projeto Destaque">
+                            <div class="card-body">
+                                <h5 class="card-title">Projeto Destaque</h5>
+                                <p class="card-text">Parceria estratégica para desenvolvimento personalizado e eficiente.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Depoimento</h2>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">"A CollaboraPro é uma parceira essencial para o nosso sucesso. Seu comprometimento e expertise são incomparáveis."</p>
+                    </blockquote>
+
+                    <h2>Desempenho dos Projetos</h2>
+                    <canvas id="projetoDesempenho2" width="400" height="200"></canvas>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Entre em Contato</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Cliente 3 -->
+    <div class="modal fade" id="clientModal3" tabindex="-1" aria-labelledby="clientModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="clientModal3Label">Soluções WebCorp</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="caminho/para/logo_cliente3.png" alt="Logo Cliente 3" class="mb-3 client-logo">
+                    <h2>Projetos Atuais</h2>
+                    <ul>
+                        <li>Projeto WebDesign - Design de Interfaces Web</li>
+                        <li>Projeto E-commerce - Desenvolvimento de Plataforma de Comércio Eletrônico</li>
+                        <li>Projeto Inovação - Integração de Tecnologias Emergentes</li>
+                    </ul>
+
+                   <div class="col-md-4">
+                        <div class="card" data-bs-toggle="modal" data-bs-target="#projetoDestaqueModal">
+                            <img src="img/banner.png" class="card-img-top" alt="Projeto Destaque">
+                            <div class="card-body">
+                                <h5 class="card-title">Projeto Destaque</h5>
+                                <p class="card-text">Transformando ideias em realidade digital.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Depoimento</h2>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">"A CollaboraPro é nossa parceira de confiança. Seu trabalho inovador transformou nossa presença digital."</p>
+                    </blockquote>
+
+                    <h2>Desempenho dos Projetos</h2>
+                    <canvas id="projetoDesempenho3" width="400" height="200"></canvas>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Entre em Contato</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Adicione mais modais conforme necessário -->
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+        <!-- Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+                <span>Conecte-se conosco nas redes sociais:</span>
+            </div>
+            <div>
+                <a href="#" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="me-4 text-reset"><i class="fab fa-google"></i></a>
+                <a href="#" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="me-4 text-reset"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="me-4 text-reset"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+        <!-- Social media -->
+
+        <!-- Links -->
+        <section class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4"><i class="fas fa-code"></i> CollaboraPro</h6>
+                    <p>Desenvolvendo soluções de software personalizadas para impulsionar seu negócio.</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Produtos</h6>
+                    <p><a href="#!" class="text-reset">Desenvolvimento Personalizado</a></p>
+                    <p><a href="#!" class="text-reset">Equipe Especializada</a></p>
+                    <p><a href="#!" class="text-reset">Soluções Inovadoras</a></p>
+                    <!-- Adicione mais produtos conforme necessário -->
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Links Úteis</h6>
+                    <p><a href="#!" class="text-reset">Blog</a></p>
+                    <p><a href="#!" class="text-reset">Contato</a></p>
+                    <p><a href="#!" class="text-reset">Clientes</a></p>
+                    <p><a href="#!" class="text-reset">Sobre</a></p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
+                    <p><i class="fas fa-home me-3"></i> Sua Rua, Sua Cidade, Seu Estado</p>
+                    <p><i class="fas fa-envelope me-3"></i> info@suaempresa.com</p>
+                    <p><i class="fas fa-phone me-3"></i> +55 123 456 789</p>
+                </div>
+            </div>
+        </section>
+        <!-- Links -->
+  
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2021 Copyright: <a class="text-reset fw-bold" href="">CollaboraPro</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="client.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

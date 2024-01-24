@@ -1,0 +1,111 @@
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo do título do card */
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Cor do texto no card */
+.card-text {
+    color: #555;
+}
+
+/* Rodapé do card */
+.card-footer {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+/* Estilo do botão "Detalhes" */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para os modais */
+.modal-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-body {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
+.modal-footer {
+    border-top: 1px solid #dee2e6;
+    padding: 1rem;
+}
+
+/* Ajuste no tamanho da logo dos clientes nos modais e torna em um círculo */
+.modal-body .client-logo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100px; /* Ajuste o tamanho desejado */
+    height: 100px; /* Ajuste o tamanho desejado */
+}
+
+/* Ajuste no estilo dos botões nos modais */
+.modal-footer button {
+    min-width: 120px;
+}
+
+/* Adicional: Adicionando estilo ao botão de fechar o modal */
+.modal-header .btn-close {
+    color: #fff;
+}
+
+/* Adiciona mais estilo ao projeto destaque */
+#projetoDestaqueModal .modal-dialog {
+    max-width: 800px; /* Ajuste a largura máxima desejada */
+}
+
+#projetoDestaqueModal .modal-body img {
+    width: 100%;
+    border-radius: 8px 8px 0 0; /* Adiciona bordas arredondadas apenas no topo */
+    object-fit: cover;
+}
+
+#projetoDestaqueModal .modal-body .card-body {
+    padding: 20px;
+}
+
+#projetoDestaqueModal .modal-body h5 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+#projetoDestaqueModal .modal-body p {
+    color: #555;
+}
+
+#projetoDestaqueModal .modal-footer .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+#projetoDestaqueModal .modal-footer .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+#projetoDestaqueModal .modal-footer .btn-secondary:hover,
+#projetoDestaqueModal .modal-footer .btn-primary:hover {
+    filter: brightness(90%);
+}
